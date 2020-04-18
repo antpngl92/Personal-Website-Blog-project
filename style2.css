@@ -1,0 +1,482 @@
+* {
+    box-sizing: border-box;
+}
+/* orbitron-700 - latin */
+@font-face {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Orbitron Bold'), local('Orbitron-Bold'),
+         url('../fonts/orbitron-v10-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/orbitron-v10-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+/* Style the body */
+body {
+    
+    background-color: #242626;
+    font-family: 'Times New Roman', Times, serif, serif, Arial, sans-serif;
+    margin: 0;
+}
+/*============================HEADER===================*/
+/* Header */
+.header {
+      
+    display: flex;
+    
+    height: 80px;
+    width: 86px;
+    text-align: center;
+    background: #000;
+    color: white;
+}
+/* Header/logo Title */
+  header img {
+    background: #000;
+}
+/* Header/Clock */
+.clock {
+    
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #609FB4;
+    font-size: 20px;
+    font-family: 'Orbitron';
+    letter-spacing: 7px;
+    font-weight: bold;
+    margin-left: 85em;
+    margin-top: 2.5em;
+}
+/*======================FLEXBOX========================*/
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+/* Create three unequal columns that sits next to each other */
+/* Sidebar/left column */
+.left {
+    
+    background-color: #171717;
+    flex: 3%;
+    line-height: 3;
+    
+}
+
+/* Main/Center column */
+.center {
+    flex: 82%;
+    padding: 20px;
+    
+}
+/*Right aside section */
+.right {
+      flex:10.5%;
+      
+      padding: 20px;
+  }
+/*===================VVERTICAL NAVBAR===================*/
+.container {
+    position: relative;
+    width: 50%;
+}
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: 15px;
+    margin-bottom:120px;
+    margin-top: 15px;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    right: 0;
+    height: 100%;
+    width: 140%;
+    opacity: 0;
+    transition: .1s ease;
+    background-color: #171717 ;;
+}
+  
+.container:hover .overlay {
+    opacity: 1;
+}
+  
+.text {
+    color:#609FB4;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/*=======================CENTER COLUMN=========================*/
+/* Create two equal columns that floats next to each other */
+
+input[type=text], input[type=email], input[type=password], #textArea {
+	background-color: #171717;
+	border: 1px solid #609FB4;
+	color: #609FB4;
+	padding: 15px 32px;
+	text-align: center;
+	font-size: 16px;
+	margin: 5px;
+	width: 450px;
+    border-radius: 5px 5px 5px 5px;
+    
+}
+.pAbout {
+    text-align: center;
+    font-size: 150%;
+    color: white;
+    
+}
+#textArea {
+    resize: none;
+}
+
+#antonBlog{
+    text-align: center;
+    font-size: 250%;
+    font-weight: bold;
+    color: #609FB4;
+}
+#button {
+	background-color: black;
+	border: none;
+	color: #609FB4;
+	padding: 15px 32px;
+	text-align: center;
+	font-size: 16px;
+	margin: 5px;
+	width: 200px;
+	border-radius: 5px 5px 5px 5px;
+	font-weight: bold;
+}
+
+#blogTime
+{
+    float: right;
+}
+
+
+.myFormBlog {
+
+	display:table;/* shrinks to fit content */ 
+    margin:auto;
+	padding: 20px;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 100%;
+
+}
+
+
+
+#blogContent
+{
+    font-size: 100%;
+}
+.myFormBLog {
+    text-align: center;
+    display:table;/* shrinks to fit content */
+    margin:auto;
+	padding: 20px;
+
+}
+
+form h1 {
+    
+    font-size: 200%;
+}
+
+#dateOnBlog {
+    float: right;
+    font-size: 20%;
+    color: #609FB4;
+}
+
+.separator {
+	position:relative;
+	box-sizing: content-box;
+	height: 3px; 
+	width: 100%;
+	background-color: #609FB4;
+	top: 3px;
+	
+}
+
+/*==========================CONTACT ME FORM =================================*/
+.margin {
+    margin: 0 15%;
+    display:table;/* shrinks to fit content */ 
+    margin:auto;
+	padding: 20px;
+    
+    border-radius: 5px 5px 5px 5px;
+    font-size: 100%;
+  }
+  
+  *:focus {
+    outline: none;
+  }
+#contact {
+    padding: 0 0 30px 0;
+    display: block;
+    font-family: Trebuchet MS;
+    color: #609FB4;
+    text-align: center;
+    text-transform: uppercase;
+  }
+.inputGroup {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .inputGroup label {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-family: Trebuchet MS;
+    color: #609FB4;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  .inputGroup input,
+  .inputGroup textarea {
+    display: block;
+    width: 280px;
+    border: none;
+    border-bottom: 1px solid #757575;
+    left: 25px;
+    padding: 5px;
+    font-family: Trebuchet MS;
+    background: none;
+    color: #ccc;
+  }
+  
+  .inputGroup input:focus ~ label,
+  .inputGroup input:valid ~ label,
+  .inputGroup textarea:focus ~ label,
+  .inputGroup textarea:valid ~ label {
+    top: -20px;
+    transition: all 0.3s ease;
+    font-size: 13px;
+  }
+  
+  .inputGroup input:focus ~ .inputBar:before,
+  .inputGroup input:focus ~ .inputBar:after,
+  .inputGroup textarea:focus ~ .inputBar:before,
+  .inputGroup textarea:focus ~ .inputBar:after {
+    width: 50%;
+  }
+  
+  .inputGroup textarea {
+    height: 100px;
+    width: 280px;
+    overflow: auto;
+    resize: none;
+  }
+  
+  .inputGroup .inputBar {
+    position: relative;
+    display: block;
+    width: 290px;
+  }
+  
+  .inputGroup .inputBar:before,
+  .inputGroup .inputBar:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    background: white;
+    height: 2px;
+    transition: all 0.2s ease;
+  }
+  
+  .inputGroup .inputBar:after {
+    right: 50%;
+  }
+  
+  .inputGroup .inputBar:before {
+    left: 50%;
+  }
+.buttonC >  button {
+    background-color: #171717;
+    border: none;
+    padding: 15px 0;
+    margin: 0;
+    width: 290px;
+    color: #609FB4;
+    text-transform: uppercase;
+    font-family: Trebuchet MS;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 6px black;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+  }
+  .buttonC > button {
+    
+    cursor: pointer;
+    text-align: center;
+}
+.buttonC >  button:hover {
+    box-shadow: 0 4px black;
+    top: 2px;
+  }
+  
+.buttonC > button:active {
+    top: 6px;
+    box-shadow: 0 0;
+  }
+
+
+
+/*========================RIGHT COLUMN========================*/
+
+.hobbies> h2 {
+    font-size:200%;
+    color: white;	
+}
+.hobbies>ul>li  {
+	display: block;
+	position:relative;
+    color: white;
+}
+.welcomeName {
+    display: block;
+    position:relative;
+    font-size: 100%;
+    font-weight: bold;
+    color: #609FB4;
+}
+.overlayRight {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    right: 0;
+    height: 100%;
+    width: 140%;
+    opacity: 0;
+    transition: .1s ease;
+    background-color: #242626;
+}
+  
+.container:hover .overlayRight {
+    opacity: 1;
+}
+  
+.text2 {
+    color:#609FB4;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.image2 {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    left: 40px;
+    height: auto;
+   
+}
+.sideButtons ul li  {
+    padding: 0.5em;
+    padding-right: 1em;
+}
+  
+/*=========================FOOTER=================================== */
+.footer {
+	
+    display:table;/* shrinks to fit content */
+    margin:auto;
+	padding: 20px;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 100%;
+    text-align: center;
+}
+footer>p>a {
+	position:relative;
+	box-sizing: content-box;
+    left: 10px;
+    text-decoration: none;
+    
+}
+
+#text {
+	color: #609FB4;
+	font-size: 150%;
+	position:relative;
+	box-sizing: content-box;
+	left: 10px;
+	
+	
+}
+/*=============================RESPONSIVE LAYOUT=======================*/  
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row  {   
+    flex-direction: column;
+    float:left;
+    }
+    .navbar, li {
+    flex-direction: row;        
+    display: inline-block;
+    height: 80px;
+    }
+
+    .column {
+    display: flex;
+    flex-direction: column;
+    }
+    .image2 {
+         width: 40px;
+        height: 40px;
+    }
+    .right{
+        width: 10px;
+    }
+    .clock {
+   
+        margin-left: 10em;
+        margin-top: 2em;
+    
+    }
+   
+}
+
+
+ 
+
+
+
+
+ 
+

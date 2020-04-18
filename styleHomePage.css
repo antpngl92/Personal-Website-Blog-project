@@ -1,0 +1,331 @@
+* {
+    box-sizing: border-box;
+}
+/* orbitron-700 - latin */
+@font-face {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Orbitron Bold'), local('Orbitron-Bold'),
+         url('../fonts/orbitron-v10-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/orbitron-v10-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+/* Style the body */
+body {
+    
+    background-color: #242626;
+    font-family: 'Times New Roman', Times, serif, serif, Arial, sans-serif;
+    margin: 0;
+}
+/*============================HEADER===================*/
+/* Header */
+.header {
+      
+    display: flex;
+    
+    height: 80px;
+    width: 86px;
+    text-align: center;
+    background: #000;
+    color: white;
+}
+/* Header/logo Title */
+  header img {
+    background: #000;
+}
+/* Header/Clock */
+.clock {
+    
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #609FB4;
+    font-size: 20px;
+    font-family: 'Orbitron';
+    letter-spacing: 7px;
+    font-weight: bold;
+    margin-left: 85em;
+    margin-top: 2.5em;
+}
+
+/*======================FLEXBOX========================*/
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+/* Create three unequal columns that sits next to each other */
+/* Sidebar/left column */
+.left {
+    
+    background-color: #171717;
+    flex: 3%;
+    line-height: 3;
+    
+}
+
+/* Main/Center column */
+.center {
+    flex: 82%;
+    padding: 20px;
+    
+}
+/*Right aside section */
+.right {
+      flex:10.5%;
+     
+      padding: 20px;
+  }
+/*===================VVERTICAL NAVBAR===================*/
+.container {
+    position: relative;
+    width: 50%;
+}
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: 15px;
+    margin-bottom:120px;
+    margin-top: 15px;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    right: 0;
+    height: 100%;
+    width: 140%;
+    opacity: 0;
+    transition: .1s ease;
+    background-color: #171717 ;;
+}
+  
+.container:hover .overlay {
+    opacity: 1;
+}
+  
+.text {
+    color:#609FB4;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/*=======================CENTER COLUMN=========================*/
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    
+    height: 400px; 
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.textAboutMyself>h2 {
+    font-size:200%;
+    color: #fff;
+    
+}
+.textAboutMyself>p {
+
+    color: #fff;
+    font-size:150%;
+    
+}
+.pictureAboutMyself {	
+    width: 60%;
+    margin-left: 100px;
+    border-radius: 50px;
+}
+#me{
+    border: 2px inset #609FB4;  
+}
+.education>h2 {
+    font-weight: bold;
+	font-size: 150%;
+}
+.education>p { 
+    
+	font-size:100%;
+	width: 450px;
+
+}
+.educationContent{
+    color: white;
+    font-size: 150%;
+}
+#educationHeader{
+    text-align: center;
+    color: white;
+    font-size: 200%;
+}
+.education {
+    position:relative;
+	box-sizing: content-box;
+    width: 70%;
+    left: 15%;
+}
+.table td {
+   
+    padding: 0.5em;
+    padding-right: 1em;
+      
+}
+
+
+/*========================RIGHT COLUMN========================*/
+
+.hobbies> h2 {
+    font-size:200%;
+    color: white;	
+}
+.hobbies>ul>li {
+	display: block;
+	position:relative;
+    color: white;
+}
+.overlayRight {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    right: 0;
+    height: 100%;
+    width: 140%;
+    opacity: 0;
+    transition: .1s ease;
+    background-color: #242626;
+}
+.welcomeName {
+    display: block;
+    position:relative;
+    font-size: 100%;
+    font-weight: bold;
+    color: #609FB4;
+} 
+.container:hover .overlayRight {
+    opacity: 1;
+}
+  
+.text2 {
+    color:#609FB4;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.image2 {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    left: 40px;
+    height: auto;
+   
+}
+.sideButtons ul li  {
+    padding: 0.5em;
+    padding-right: 1em;
+}
+  
+/*=========================FOOTER=================================== */
+.footer {
+	
+    display:table;/* shrinks to fit content */
+    margin:auto;
+	padding: 20px;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 100%;
+    text-align: center;
+}
+footer>p>a {
+	position:relative;
+	box-sizing: content-box;
+    left: 10px;
+    text-decoration: none;
+    
+}
+
+#text {
+	color: #609FB4;
+	font-size: 150%;
+	position:relative;
+	box-sizing: content-box;
+	left: 10px;
+	
+	
+}
+
+/*=============================RESPONSIVE LAYOUT=======================*/  
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row  {   
+    flex-direction: column;
+    float:left;
+    }
+    .navbar, li {
+    flex-direction: row;        
+    display: inline-block;
+    height: 80px;
+    }
+
+    .column {
+    display: flex;
+    flex-direction: column;
+    }
+    .image2 {
+         width: 40px;
+        height: 40px;
+    }
+    .clock {
+   
+        margin-left: 10em;
+        margin-top: 2em;
+    
+    }
+    .textAboutMyself
+    {
+        flex-direction: column;
+        float:left;
+    }
+    .pictureAboutMyself
+    {
+        flex-direction: row; 
+        float:left;
+    }
+    .right > li {
+        margin: 20px;
+        padding: 10px;
+        }
+   
+}
+
+  
+ 
+
+
+
+
+ 
+
